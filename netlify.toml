@@ -5,101 +5,105 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# Trailing slash redirects (301 = preserves SEO equity)
+# ── Old kristiangg.dk pages → new structure (301 preserves SEO equity) ────────
+[[redirects]]
+  from = "/hypnosen"
+  to = "/til-dig/psykoterapi"
+  status = 301
+
 [[redirects]]
   from = "/hypnosen/"
-  to = "/hypnosen"
+  to = "/til-dig/psykoterapi"
+  status = 301
+
+[[redirects]]
+  from = "/nlp"
+  to = "/til-dig/psykoterapi"
   status = 301
 
 [[redirects]]
   from = "/nlp/"
-  to = "/nlp"
+  to = "/til-dig/psykoterapi"
+  status = 301
+
+[[redirects]]
+  from = "/terapi"
+  to = "/til-dig/psykoterapi"
   status = 301
 
 [[redirects]]
   from = "/terapi/"
-  to = "/terapi"
+  to = "/til-dig/psykoterapi"
   status = 301
 
 [[redirects]]
-  from = "/priser/"
-  to = "/priser"
+  from = "/hypnoseshow"
+  to = "/til-virksomheder/foredrag"
   status = 301
 
 [[redirects]]
   from = "/hypnoseshow/"
-  to = "/hypnoseshow"
-  status = 301
-
-[[redirects]]
-  from = "/kontakt/"
-  to = "/kontakt"
-  status = 301
-
-# Old subpages → nearest topic page (301 preserves SEO equity)
-[[redirects]]
-  from = "/terapi-i-eget-hjem/"
-  to = "/terapi"
+  to = "/til-virksomheder/foredrag"
   status = 301
 
 [[redirects]]
   from = "/terapi-i-eget-hjem"
-  to = "/terapi"
+  to = "/til-dig/psykoterapi"
   status = 301
 
 [[redirects]]
-  from = "/hypnose-stress-odense/"
-  to = "/hypnosen"
+  from = "/terapi-i-eget-hjem/"
+  to = "/til-dig/psykoterapi"
   status = 301
 
 [[redirects]]
   from = "/hypnose-stress-odense"
-  to = "/hypnosen"
+  to = "/til-dig/nervesystemet"
   status = 301
 
 [[redirects]]
-  from = "/hypnose-angst-boern/"
-  to = "/hypnosen"
+  from = "/hypnose-stress-odense/"
+  to = "/til-dig/nervesystemet"
   status = 301
 
 [[redirects]]
   from = "/hypnose-angst-boern"
-  to = "/hypnosen"
+  to = "/til-dig/psykoterapi"
   status = 301
 
 [[redirects]]
-  from = "/boern-og-hypnose/"
-  to = "/hypnosen"
+  from = "/hypnose-angst-boern/"
+  to = "/til-dig/psykoterapi"
   status = 301
 
 [[redirects]]
   from = "/boern-og-hypnose"
-  to = "/hypnosen"
+  to = "/til-dig/psykoterapi"
   status = 301
 
 [[redirects]]
-  from = "/spirituel-hypnoterapi/"
-  to = "/hypnosen"
+  from = "/boern-og-hypnose/"
+  to = "/til-dig/psykoterapi"
   status = 301
 
 [[redirects]]
   from = "/spirituel-hypnoterapi"
-  to = "/hypnosen"
+  to = "/til-dig/psykoterapi"
   status = 301
 
 [[redirects]]
-  from = "/hypnose-depression/"
-  to = "/hypnosen"
+  from = "/spirituel-hypnoterapi/"
+  to = "/til-dig/psykoterapi"
   status = 301
 
 [[redirects]]
   from = "/hypnose-depression"
-  to = "/hypnosen"
+  to = "/til-dig/psykoterapi"
   status = 301
 
 [[redirects]]
-  from = "/klinikken/"
-  to = "/kontakt"
+  from = "/hypnose-depression/"
+  to = "/til-dig/psykoterapi"
   status = 301
 
 [[redirects]]
@@ -107,7 +111,74 @@
   to = "/kontakt"
   status = 301
 
-# Security headers
+[[redirects]]
+  from = "/klinikken/"
+  to = "/kontakt"
+  status = 301
+
+# ── fynspsykoterapi.dk pages (if/when domain is redirected here) ──────────────
+[[redirects]]
+  from = "/neuro-lingvistisk-programmering"
+  to = "/til-dig/psykoterapi"
+  status = 301
+
+[[redirects]]
+  from = "/online-terapi"
+  to = "/til-dig/psykoterapi"
+  status = 301
+
+[[redirects]]
+  from = "/vaerdigrundlag"
+  to = "/om"
+  status = 301
+
+[[redirects]]
+  from = "/om-mig"
+  to = "/om"
+  status = 301
+
+[[redirects]]
+  from = "/stress-coaching"
+  to = "/til-dig/nervesystemet"
+  status = 301
+
+[[redirects]]
+  from = "/naturterapi"
+  to = "/til-dig/naturterapi"
+  status = 301
+
+# ── Trailing-slash normalisation (new pages) ─────────────────────────────────
+[[redirects]]
+  from = "/priser/"
+  to = "/priser"
+  status = 301
+
+[[redirects]]
+  from = "/kontakt/"
+  to = "/kontakt"
+  status = 301
+
+[[redirects]]
+  from = "/om/"
+  to = "/om"
+  status = 301
+
+[[redirects]]
+  from = "/til-dig/"
+  to = "/til-dig"
+  status = 301
+
+[[redirects]]
+  from = "/til-virksomheder/"
+  to = "/til-virksomheder"
+  status = 301
+
+[[redirects]]
+  from = "/til-kommuner/"
+  to = "/til-kommuner"
+  status = 301
+
+# ── Security headers ──────────────────────────────────────────────────────────
 [[headers]]
   for = "/*"
   [headers.values]

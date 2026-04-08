@@ -18,12 +18,25 @@ const config = {
   additionalPaths: async () => {
     return [
       { loc: "/", changefreq: "weekly", priority: 1.0 },
-      { loc: "/hypnosen", changefreq: "monthly", priority: 0.9 },
-      { loc: "/nlp", changefreq: "monthly", priority: 0.9 },
-      { loc: "/terapi", changefreq: "monthly", priority: 0.9 },
+      // Til dig
+      { loc: "/til-dig", changefreq: "monthly", priority: 0.9 },
+      { loc: "/til-dig/nervesystemet", changefreq: "monthly", priority: 0.9 },
+      { loc: "/til-dig/naturterapi", changefreq: "monthly", priority: 0.9 },
+      { loc: "/til-dig/psykoterapi", changefreq: "monthly", priority: 0.9 },
+      // Til virksomheder
+      { loc: "/til-virksomheder", changefreq: "monthly", priority: 0.8 },
+      { loc: "/til-virksomheder/workshops", changefreq: "monthly", priority: 0.8 },
+      { loc: "/til-virksomheder/foredrag", changefreq: "monthly", priority: 0.8 },
+      { loc: "/til-virksomheder/trivsel", changefreq: "monthly", priority: 0.8 },
+      // Til kommuner
+      { loc: "/til-kommuner", changefreq: "monthly", priority: 0.8 },
+      { loc: "/til-kommuner/saerforanstaltninger", changefreq: "monthly", priority: 0.7 },
+      { loc: "/til-kommuner/vikardaekning", changefreq: "monthly", priority: 0.7 },
+      { loc: "/til-kommuner/borgerforloeb", changefreq: "monthly", priority: 0.7 },
+      // Supporting pages
+      { loc: "/om", changefreq: "monthly", priority: 0.8 },
       { loc: "/priser", changefreq: "monthly", priority: 0.8 },
       { loc: "/kontakt", changefreq: "monthly", priority: 0.8 },
-      { loc: "/hypnoseshow", changefreq: "monthly", priority: 0.7 },
     ];
   },
 };

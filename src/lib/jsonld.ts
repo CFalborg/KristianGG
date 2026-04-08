@@ -6,25 +6,29 @@ export function getLocalBusinessSchema() {
     "@type": "LocalBusiness",
     name: BUSINESS.fullName,
     description:
-      "Professionel hypnose og NLP terapi i Odense og online. Hjælp til stress, angst, depression og personlig udvikling.",
+      "Reg. psykoterapeut og hypnoterapeut i Odense. Hjælp til private, virksomheder og kommuner via TRÅD-metoden.",
     url: SITE_URL,
     telephone: BUSINESS.phone,
     email: BUSINESS.email,
     address: {
       "@type": "PostalAddress",
+      streetAddress: BUSINESS.address.street,
       addressLocality: BUSINESS.address.city,
       postalCode: BUSINESS.address.postalCode,
+      addressRegion: BUSINESS.address.region,
       addressCountry: BUSINESS.address.country,
     },
     priceRange: BUSINESS.priceRange,
     openingHours: BUSINESS.openingHours,
+    areaServed: [
+      { "@type": "City", name: "Odense" },
+      { "@type": "AdministrativeArea", name: "Fyn" },
+      { "@type": "AdministrativeArea", name: "Syddanmark" },
+      { "@type": "Country", name: "Danmark" },
+    ],
     sameAs: [BUSINESS.facebook, BUSINESS.trustpilot],
     currenciesAccepted: "DKK",
     paymentAccepted: "MobilePay, Kontant, Bankoverførsel",
-    areaServed: {
-      "@type": "City",
-      name: "Odense",
-    },
   };
 }
 
@@ -32,16 +36,23 @@ export function getPersonSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: BUSINESS.name,
-    jobTitle: "Hypnoterapeut & NLP Terapeut",
+    name: "Kristian G. G. Dansted",
+    jobTitle: "Reg. Psykoterapeut & Hypnoterapeut",
     url: SITE_URL,
     telephone: BUSINESS.phone,
     email: BUSINESS.email,
+    award: "Ildsjælepris 2019",
     worksFor: {
       "@type": "LocalBusiness",
       name: BUSINESS.fullName,
     },
-    knowsAbout: ["Hypnose", "NLP", "Terapi", "Stress", "Angst", "Depression"],
+    hasCredential: [
+      { "@type": "EducationalOccupationalCredential", name: "Reg. Psykoterapeut (FaDP)" },
+      { "@type": "EducationalOccupationalCredential", name: "Master Neuro Hypnoterapeut" },
+      { "@type": "EducationalOccupationalCredential", name: "Master NLP Practitioner" },
+      { "@type": "EducationalOccupationalCredential", name: "Åndedrætsterapeut" },
+    ],
+    knowsAbout: ["Psykoterapi", "Hypnoterapi", "NLP", "Nervesystemsregulering", "Naturterapi", "Åndedrætsterapi"],
   };
 }
 
@@ -58,11 +69,12 @@ export function getServiceSchema(name: string, description: string) {
     },
     areaServed: [
       { "@type": "City", name: "Odense" },
-      { "@type": "Country", name: "Danmark" },
+      { "@type": "AdministrativeArea", name: "Fyn" },
+      { "@type": "AdministrativeArea", name: "Syddanmark" },
     ],
     availableChannel: {
       "@type": "ServiceChannel",
-      serviceUrl: SITE_URL,
+      serviceUrl: BUSINESS.booking,
       servicePhone: BUSINESS.phone,
     },
   };

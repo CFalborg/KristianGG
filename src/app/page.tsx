@@ -1,60 +1,64 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Hero from "@/components/Hero";
-import ServiceCard from "@/components/ServiceCard";
+import AudienceCard from "@/components/AudienceCard";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
 import SectionHeading from "@/components/SectionHeading";
 import JsonLd from "@/components/JsonLd";
 import { getPersonSchema } from "@/lib/jsonld";
 import { createMetadata } from "@/lib/metadata";
-import { BUSINESS } from "@/lib/constants";
 
 export const metadata: Metadata = createMetadata({
-  title: "Hypnoterapeut & NLP Terapeut i Odense | Kristian GG",
+  title: "Psykoterapeut & Hypnoterapeut i Odense | Kristian GG",
   description:
-    "Professionel hypnose og NLP terapi i Odense og online. Certificeret hypnoterapeut der hjælper med stress, angst, depression og personlig udvikling. Book i dag.",
+    "Reg. psykoterapeut og hypnoterapeut i Odense. TRÅD-metoden – nervesystemsbaseret terapi for private, virksomheder og kommuner på Fyn. Book gratis samtale.",
   path: "/",
 });
 
-const SERVICES = [
+const AUDIENCES = [
   {
-    icon: "🧠",
-    title: "Hypnose",
-    description:
-      "Effektiv hypnoterapi mod stress, angst, fobier, søvnproblemer og uønskede vaner. Professionel og tryg behandling i Odense eller online.",
-    href: "/hypnosen",
+    icon: "🌿",
+    title: "Til dig",
+    subtitle: "Privat terapi og nervesystemsregulering",
+    bullets: [
+      "Ro på nervesystemet",
+      "Naturterapi på Fyn",
+      "Psykoterapi, hypnose & NLP",
+    ],
+    href: "/til-dig",
+    accentColor: "border-primary",
   },
   {
-    icon: "🎯",
-    title: "NLP Terapi",
-    description:
-      "Neuro-Lingvistisk Programmering til at ændre begrænsende tankemønstre, overvinde forhindringer og nå dine mål hurtigere.",
-    href: "/nlp",
+    icon: "🏢",
+    title: "Til virksomheder",
+    subtitle: "Workshops, foredrag og medarbejdertrivsel",
+    bullets: [
+      "Praksisnære stressworkshops",
+      "Foredrag om nervesystemet",
+      "Trivselsprogrammer",
+    ],
+    href: "/til-virksomheder",
+    accentColor: "border-accent",
   },
   {
-    icon: "💬",
-    title: "Terapi",
-    description:
-      "Skræddersyet samtaleterapi kombineret med hypnose og NLP. Et helhedsorienteret forløb tilpasset netop dine udfordringer.",
-    href: "/terapi",
-  },
-  {
-    icon: "🏠",
-    title: "Online Terapi",
-    description:
-      "Få professionel terapi hjemmefra. Online sessioner giver den samme effekt med fuld fleksibilitet – uanset hvor du befinder dig.",
-    href: "/terapi",
+    icon: "🏛️",
+    title: "Til kommuner",
+    subtitle: "Faglig støtte, vikardækning og borgerforløb",
+    bullets: [
+      "Pædagogiske særforanstaltninger",
+      "Faglig vikardækning",
+      "Individuelle borgerforløb",
+    ],
+    href: "/til-kommuner",
+    accentColor: "border-teal-700",
   },
 ];
 
-const BENEFITS = [
-  { icon: "✅", text: "Certificeret hypnoterapeut & NLP practitioner" },
-  { icon: "✅", text: "Mere end 500 tilfredse klienter" },
-  { icon: "✅", text: "Klinik i Odense + online sessioner" },
-  { icon: "✅", text: "Gratis uforpligtende telefonsamtale" },
-  { icon: "✅", text: "Hurtige resultater – allerede fra første session" },
-  { icon: "✅", text: "Fortroligt og professionelt rum" },
+const TRAAD_STEPS = [
+  { letter: "T", word: "Tilknytning", desc: "Trygge relationer som fundament. Relation før metode – altid." },
+  { letter: "R", word: "Regulering", desc: "Nervesystemsregulering og kropsbevidsthed som indgang til forandring." },
+  { letter: "Å", word: "Ånde", desc: "Åndedrætsterapi og somatisk forankring aktiverer det parasympatiske system." },
+  { letter: "D", word: "Dybde", desc: "Kognitiv og hypnoterapeutisk dybdebehandling forankrer varig forandring." },
 ];
 
 export default function HomePage() {
@@ -62,83 +66,125 @@ export default function HomePage() {
     <>
       <JsonLd data={getPersonSchema()} />
 
-      <Hero
-        title="Professionel Hypnose & NLP Terapi i Odense"
-        subtitle="Certificeret hypnoterapeut og NLP-terapeut. Jeg hjælper dig med at overvinde stress, angst, depression og uønskede mønstre – i klinikken eller online."
-        ctaText="Book en gratis samtale"
-        ctaHref="/kontakt"
-        secondaryCtaText="Se mine ydelser"
-        secondaryCtaHref="/hypnosen"
-      />
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-primary-light via-white to-white">
+        <div className="container-width py-16 md:py-24">
+          <div className="max-w-3xl">
+            <p className="text-primary font-medium text-sm uppercase tracking-wide mb-4">
+              Reg. Psykoterapeut (FaDP) · Odense, Fyn
+            </p>
+            <h1 className="text-4xl md:text-5xl font-bold text-text-dark leading-tight mb-6">
+              Find ro i nervesystemet – og varig forandring
+            </h1>
+            <p className="text-lg md:text-xl text-text-muted leading-relaxed mb-8 max-w-2xl">
+              Jeg er Kristian G. G. Dansted, reg. psykoterapeut og hypnoterapeut. Med TRÅD-metoden
+              hjælper jeg dig, din virksomhed eller din kommune med at skabe reel og varig forandring
+              – i klinikken i Odense, online eller i naturen på Fyn.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/kontakt" className="btn-primary">
+                Book gratis samtale
+              </Link>
+              <Link href="/om" className="btn-secondary">
+                Om Kristian
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="h-1 bg-gradient-to-r from-primary via-accent to-primary-light" />
+      </section>
 
-      {/* Services */}
+      {/* 3-segment audience cards */}
       <section className="section-padding">
         <div className="container-width">
           <SectionHeading
-            title="Hvad kan jeg hjælpe dig med?"
-            subtitle="Jeg tilbyder professionel hypnose og NLP terapi til en bred vifte af udfordringer. Alt foregår i trygge, fortrolige rammer."
+            title="Hvem kan jeg hjælpe?"
+            subtitle="Jeg arbejder med tre målgrupper – med samme menneskesyn og samme forankring i nervesystemet."
+            centered
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {SERVICES.map((s) => (
-              <ServiceCard key={s.href + s.title} {...s} />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+            {AUDIENCES.map((a) => (
+              <AudienceCard key={a.href} {...a} />
             ))}
           </div>
         </div>
       </section>
 
-      {/* About */}
+      {/* TRÅD-metoden */}
       <section className="section-padding bg-bg-cream">
         <div className="container-width">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <SectionHeading
-                title="Om Kristian GG"
-                subtitle="Certificeret hypnoterapeut og NLP-terapeut med base i Odense"
+                title="TRÅD-metoden"
+                subtitle="En integreret tilgang der kombinerer det bedste fra nervesystemsbaseret terapi, åndedrætsterapi, hypnoterapi og kognitiv psykologi."
               />
-              <p className="text-text-muted leading-relaxed mb-4">
-                Jeg er uddannet og certificeret hypnoterapeut og NLP-terapeut. Jeg har hjulpet
-                hundredvis af klienter med at overkomme alt fra daglig stress og angst til dybt
-                rodfæstede vaner og traumer.
-              </p>
-              <p className="text-text-muted leading-relaxed mb-4">
-                Min tilgang kombinerer klassisk hypnoterapi med moderne NLP-teknikker og
-                samtaleterapi – skræddersyet til netop dig. Jeg tror på, at alle har ressourcerne
-                til forandring, og mit job er at hjælpe dig med at finde og aktivere dem.
-              </p>
               <p className="text-text-muted leading-relaxed mb-6">
-                Jeg modtager klienter i min klinik i Odense samt online via video.
+                TRÅD er ikke en enkelt teknik – det er en filosofi om, hvordan varig forandring
+                opstår. Den er udviklet ud fra Kristians uddannelser, kliniske erfaring og
+                personlige rejse fra en alvorlig rygulykke til psykoterapeut med Ildsjælepris.
               </p>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
-                {BENEFITS.map((b, i) => (
-                  <li key={i} className="flex items-center gap-2 text-sm text-text-muted">
-                    <span>{b.icon}</span>
-                    <span>{b.text}</span>
-                  </li>
-                ))}
-              </ul>
-              <Link href="/kontakt" className="btn-primary">
-                Book en tid
+              <Link href="/om" className="btn-secondary">
+                Læs mere om tilgangen
               </Link>
             </div>
-            <div className="relative">
-              <div className="bg-primary-light rounded-2xl aspect-[4/5] flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-white text-4xl font-bold">K</span>
+            <div className="space-y-4">
+              {TRAAD_STEPS.map((step) => (
+                <div key={step.letter} className="flex gap-4 items-start">
+                  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-xl">{step.letter}</span>
                   </div>
-                  <p className="text-primary font-semibold text-lg">Kristian GG</p>
-                  <p className="text-text-muted text-sm mt-1">Hypnoterapeut & NLP Terapeut</p>
-                  <p className="text-text-muted text-sm">Odense, Danmark</p>
-                  <div className="mt-4 inline-flex items-center gap-1">
-                    {[1, 2, 3, 4, 5].map((s) => (
-                      <svg key={s} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    ))}
+                  <div>
+                    <h3 className="font-semibold text-text-dark">{step.word}</h3>
+                    <p className="text-text-muted text-sm leading-relaxed">{step.desc}</p>
                   </div>
-                  <p className="text-text-muted text-xs mt-1">5.0 på Trustpilot</p>
                 </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About teaser */}
+      <section className="section-padding">
+        <div className="container-width">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="bg-primary-light rounded-2xl p-8 flex flex-col items-center text-center">
+              <div className="w-24 h-24 bg-primary rounded-full flex items-center justify-center mb-4">
+                <span className="text-white text-4xl font-bold">K</span>
               </div>
+              <p className="font-bold text-lg text-text-dark">Kristian G. G. Dansted</p>
+              <p className="text-text-muted text-sm mt-1">Reg. Psykoterapeut (FaDP)</p>
+              <p className="text-text-muted text-sm">Master Neuro Hypnoterapeut · Master NLP</p>
+              <p className="text-text-muted text-sm">Åndedrætsterapeut · KAT/DAT</p>
+              <div className="mt-3 inline-flex items-center gap-1">
+                {[1,2,3,4,5].map((s) => (
+                  <svg key={s} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-text-muted text-xs mt-1">Top-rated på Trustpilot</p>
+              <p className="mt-3 text-xs text-primary font-medium">🏆 Ildsjælepris 2019</p>
+            </div>
+            <div>
+              <SectionHeading title="En personlig rejse bag faglig dybde" />
+              <div className="space-y-4 text-text-muted leading-relaxed">
+                <p>
+                  Jeg hedder Kristian og har selv oplevet, hvad det vil sige at skulle genopbygge
+                  sig selv fra bunden. Efter en alvorlig rygulykke som 21-årig håndværker fandt jeg
+                  vejen til psykoterapien – og har siden 2019 hjulpet hundredvis af mennesker med
+                  at finde tilbage til sig selv.
+                </p>
+                <p>
+                  Jeg er uddannet reg. psykoterapeut (FaDP), Master Neuro Hypnoterapeut, Master NLP
+                  Practitioner og åndedrætsterapeut. Min pædagogiske baggrund fra botilbud og
+                  asylcentre giver mig en særlig forståelse for sårbare grupper og komplekse forløb.
+                </p>
+              </div>
+              <Link href="/om" className="btn-primary mt-6 inline-block">
+                Læs min historie
+              </Link>
             </div>
           </div>
         </div>
@@ -146,48 +192,11 @@ export default function HomePage() {
 
       <TestimonialsSection />
 
-      {/* Process */}
-      <section className="section-padding">
-        <div className="container-width">
-          <SectionHeading
-            title="Sådan forløber det"
-            subtitle="Fra første kontakt til varig forandring – et enkelt og trygt forløb"
-            centered
-          />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-            {[
-              { step: "1", title: "Gratis samtale", desc: "Vi tager en uforpligtende telefonsamtale, hvor vi afklarer dine behov og muligheder." },
-              { step: "2", title: "Første session", desc: "Vi kortlægger din situation og påbegynder det terapeutiske arbejde med klare mål." },
-              { step: "3", title: "Forløb", desc: "Typisk 3–5 sessioner, afhængigt af din situation. Hvert møde bygger videre på det forrige." },
-              { step: "4", title: "Varig forandring", desc: "Du forlader forløbet med konkrete værktøjer og en ny forståelse af dig selv." },
-            ].map((p) => (
-              <div key={p.step} className="text-center">
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-lg">{p.step}</span>
-                </div>
-                <h3 className="font-semibold text-text-dark mb-2">{p.title}</h3>
-                <p className="text-text-muted text-sm leading-relaxed">{p.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <CTASection />
-
-      {/* Price teaser */}
-      <section className="section-padding bg-bg-cream">
-        <div className="container-width text-center">
-          <h2 className="text-3xl font-bold text-text-dark mb-3">Priser</h2>
-          <p className="text-text-muted text-lg mb-2">
-            Enkeltsessioner fra <span className="text-primary font-bold">{BUSINESS.priceRange}</span>
-          </p>
-          <p className="text-text-muted mb-6">Gratis og uforpligtende telefonsamtale inkluderet</p>
-          <Link href="/priser" className="btn-secondary">
-            Se alle priser
-          </Link>
-        </div>
-      </section>
+      <CTASection
+        heading="Tag det første skridt i dag"
+        text="Book en gratis og uforpligtende telefonsamtale. Jeg vender tilbage inden for 24 timer."
+        buttonText="Book gratis samtale"
+      />
     </>
   );
 }
