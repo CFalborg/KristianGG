@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { NAV_LINKS } from "@/lib/constants";
+import NavDropdown from "./NavDropdown";
 import MobileMenu from "./MobileMenu";
 
 export default function Header() {
@@ -18,20 +19,29 @@ export default function Header() {
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="px-3 py-2 rounded-lg text-sm font-medium text-text-muted hover:text-primary hover:bg-primary-light transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {NAV_LINKS.map((link) =>
+              link.children ? (
+                <NavDropdown
+                  key={link.href}
+                  label={link.label}
+                  href={link.href}
+                  items={link.children}
+                />
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="px-3 py-2 rounded-lg text-sm font-medium text-text-muted hover:text-primary hover:bg-primary-light transition-colors"
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
           </nav>
 
           <div className="hidden md:block">
             <Link href="/kontakt" className="btn-primary text-sm py-2 px-5">
-              Book en tid
+              Book gratis samtale
             </Link>
           </div>
 
