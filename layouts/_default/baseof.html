@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  {{ partial "head.html" . }}
+  {{ block "schema" . }}{{ end }}
+</head>
+<body class="flex flex-col min-h-screen bg-white text-text-dark">
+  {{ partial "header.html" . }}
+  <main class="flex-1">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+</body>
+</html>

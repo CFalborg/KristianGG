@@ -1,0 +1,21 @@
+{{- $b := .Site.Data.business -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{{ .Params.schema_type | default "BlogPosting" }}",
+  "headline": {{ .Title | jsonify }},
+  "description": {{ .Description | jsonify }},
+  "datePublished": "{{ .Date.Format "2006-01-02" }}",
+  "dateModified": "{{ (.Params.updated | default .Date).Format "2006-01-02" }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Params.author | default "Kristian G. G. Dansted" }}",
+    "jobTitle": "{{ .Params.author_credentials | default "Reg. Psykoterapeut (FaDP)" }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ $b.full_name }}"
+  },
+  "url": "{{ .Permalink }}"
+}
+</script>

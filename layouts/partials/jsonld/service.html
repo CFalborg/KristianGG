@@ -1,0 +1,26 @@
+{{- $b := .Site.Data.business -}}
+{{- with .Params.service_name -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{{ . }}",
+  "description": "{{ $.Params.service_desc }}",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "{{ $b.full_name }}",
+    "url": "{{ $.Site.BaseURL }}"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Odense" },
+    { "@type": "AdministrativeArea", "name": "Fyn" },
+    { "@type": "AdministrativeArea", "name": "Syddanmark" }
+  ],
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "{{ $b.booking }}",
+    "servicePhone": "{{ $b.phone }}"
+  }
+}
+</script>
+{{- end -}}

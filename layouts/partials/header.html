@@ -1,0 +1,143 @@
+{{- $b := .Site.Data.business -}}
+{{- $booking := $b.booking -}}
+<header class="sticky top-0 z-40 bg-white border-b border-gray-100 shadow-sm">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+
+    {{/* Logo */}}
+    <a href="/" class="font-bold text-xl text-primary hover:text-primary-dark transition-colors">
+      Kristian GG
+    </a>
+
+    {{/* Desktop nav */}}
+    <nav class="hidden lg:flex items-center gap-1" aria-label="Primær navigation">
+
+      {{/* Til dig */}}
+      <div class="relative" data-dropdown>
+        <button class="nav-link flex items-center gap-1" data-dropdown-trigger aria-expanded="false" aria-haspopup="true">
+          Til dig
+          <svg class="w-3.5 h-3.5 transition-transform" data-dropdown-arrow fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="dropdown-panel" data-dropdown-panel>
+          <a href="/til-dig/nervesystemet" class="dropdown-item">Nervesystemet & ro</a>
+          <a href="/til-dig/naturterapi"   class="dropdown-item">Naturterapi</a>
+          <a href="/til-dig/psykoterapi"   class="dropdown-item">Psykoterapi</a>
+          <hr class="my-1 border-gray-100" />
+          <a href="/til-dig" class="dropdown-item text-primary font-medium">Se alle →</a>
+        </div>
+      </div>
+
+      {{/* Til virksomheder */}}
+      <div class="relative" data-dropdown>
+        <button class="nav-link flex items-center gap-1" data-dropdown-trigger aria-expanded="false" aria-haspopup="true">
+          Til virksomheder
+          <svg class="w-3.5 h-3.5 transition-transform" data-dropdown-arrow fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="dropdown-panel" data-dropdown-panel>
+          <a href="/til-virksomheder/workshops" class="dropdown-item">Workshops</a>
+          <a href="/til-virksomheder/foredrag"  class="dropdown-item">Foredrag</a>
+          <a href="/til-virksomheder/trivsel"   class="dropdown-item">Medarbejdertrivsel</a>
+          <hr class="my-1 border-gray-100" />
+          <a href="/til-virksomheder" class="dropdown-item text-primary font-medium">Se alle →</a>
+        </div>
+      </div>
+
+      {{/* Til kommuner */}}
+      <div class="relative" data-dropdown>
+        <button class="nav-link flex items-center gap-1" data-dropdown-trigger aria-expanded="false" aria-haspopup="true">
+          Til kommuner
+          <svg class="w-3.5 h-3.5 transition-transform" data-dropdown-arrow fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="dropdown-panel" data-dropdown-panel>
+          <a href="/til-kommuner/saerforanstaltninger" class="dropdown-item">Pæd. særforanstaltninger</a>
+          <a href="/til-kommuner/vikardaekning"        class="dropdown-item">Vikardækning</a>
+          <a href="/til-kommuner/borgerforloeb"        class="dropdown-item">Borgerforløb</a>
+          <hr class="my-1 border-gray-100" />
+          <a href="/til-kommuner" class="dropdown-item text-primary font-medium">Se alle →</a>
+        </div>
+      </div>
+
+      <a href="/blog"    class="nav-link">Blog</a>
+      <a href="/priser"  class="nav-link">Priser</a>
+      <a href="/kontakt" class="nav-link">Kontakt</a>
+
+      <a href="{{ $booking }}" target="_blank" rel="noopener"
+         class="ml-3 btn-primary text-sm py-2 px-4">
+        Book gratis samtale
+      </a>
+    </nav>
+
+    {{/* Mobile hamburger */}}
+    <button class="lg:hidden p-2 rounded-lg text-text-muted hover:bg-gray-100 transition-colors"
+            data-mobile-menu-trigger aria-label="Åbn menu" aria-expanded="false">
+      <svg class="w-6 h-6" data-hamburger-icon fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+      <svg class="w-6 h-6 hidden" data-close-icon fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+
+  {{/* Mobile menu */}}
+  <div class="lg:hidden hidden border-t border-gray-100 bg-white" data-mobile-menu>
+    <nav class="max-w-6xl mx-auto px-4 py-4 space-y-1" aria-label="Mobil navigation">
+
+      {{/* Accordion sections */}}
+      <div data-mobile-section>
+        <button class="mobile-section-btn" data-mobile-section-trigger>
+          Til dig <svg class="w-4 h-4 ml-auto transition-transform" data-mobile-arrow fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="hidden pl-4 space-y-1 mt-1" data-mobile-section-panel>
+          <a href="/til-dig/nervesystemet" class="mobile-link">Nervesystemet & ro</a>
+          <a href="/til-dig/naturterapi"   class="mobile-link">Naturterapi</a>
+          <a href="/til-dig/psykoterapi"   class="mobile-link">Psykoterapi</a>
+          <a href="/til-dig"               class="mobile-link text-primary font-medium">Se alle →</a>
+        </div>
+      </div>
+
+      <div data-mobile-section>
+        <button class="mobile-section-btn" data-mobile-section-trigger>
+          Til virksomheder <svg class="w-4 h-4 ml-auto transition-transform" data-mobile-arrow fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="hidden pl-4 space-y-1 mt-1" data-mobile-section-panel>
+          <a href="/til-virksomheder/workshops" class="mobile-link">Workshops</a>
+          <a href="/til-virksomheder/foredrag"  class="mobile-link">Foredrag</a>
+          <a href="/til-virksomheder/trivsel"   class="mobile-link">Medarbejdertrivsel</a>
+          <a href="/til-virksomheder"            class="mobile-link text-primary font-medium">Se alle →</a>
+        </div>
+      </div>
+
+      <div data-mobile-section>
+        <button class="mobile-section-btn" data-mobile-section-trigger>
+          Til kommuner <svg class="w-4 h-4 ml-auto transition-transform" data-mobile-arrow fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="hidden pl-4 space-y-1 mt-1" data-mobile-section-panel>
+          <a href="/til-kommuner/saerforanstaltninger" class="mobile-link">Pæd. særforanstaltninger</a>
+          <a href="/til-kommuner/vikardaekning"        class="mobile-link">Vikardækning</a>
+          <a href="/til-kommuner/borgerforloeb"        class="mobile-link">Borgerforløb</a>
+          <a href="/til-kommuner"                      class="mobile-link text-primary font-medium">Se alle →</a>
+        </div>
+      </div>
+
+      <a href="/blog"    class="mobile-link block">Blog</a>
+      <a href="/priser"  class="mobile-link block">Priser</a>
+      <a href="/kontakt" class="mobile-link block">Kontakt</a>
+      <a href="{{ $booking }}" target="_blank" rel="noopener"
+         class="btn-primary block text-center mt-3">Book gratis samtale</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .nav-link { @apply px-3 py-2 rounded-lg text-sm font-medium text-text-muted hover:text-primary hover:bg-primary-light transition-colors; }
+  .dropdown-panel { @apply absolute top-full left-0 mt-1 w-56 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50 hidden; }
+  .dropdown-item { @apply block px-4 py-2.5 text-sm text-text-muted hover:text-primary hover:bg-gray-50 transition-colors; }
+  .mobile-section-btn { @apply w-full flex items-center text-sm font-medium text-text-muted py-2.5 px-3 rounded-lg hover:bg-gray-50 transition-colors; }
+  .mobile-link { @apply block text-sm text-text-muted py-2 px-3 rounded-lg hover:bg-gray-50 hover:text-primary transition-colors; }
+</style>
