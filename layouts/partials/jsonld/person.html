@@ -1,0 +1,21 @@
+{{- $b := .Site.Data.business -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kristian G. G. Dansted",
+  "jobTitle": "Reg. Psykoterapeut & Hypnoterapeut",
+  "url": "{{ .Site.BaseURL }}",
+  "telephone": "{{ $b.phone }}",
+  "email": "{{ $b.email }}",
+  "award": "Ildsjælepris 2019",
+  "worksFor": { "@type": "LocalBusiness", "name": "{{ $b.full_name }}" },
+  "hasCredential": [
+    { "@type": "EducationalOccupationalCredential", "name": "Reg. Psykoterapeut (FaDP)" },
+    { "@type": "EducationalOccupationalCredential", "name": "Master Neuro Hypnoterapeut" },
+    { "@type": "EducationalOccupationalCredential", "name": "Master NLP Practitioner" },
+    { "@type": "EducationalOccupationalCredential", "name": "Åndedrætsterapeut" }
+  ],
+  "knowsAbout": ["Psykoterapi", "Hypnoterapi", "NLP", "Nervesystemsregulering", "Naturterapi", "Åndedrætsterapi"]
+}
+</script>

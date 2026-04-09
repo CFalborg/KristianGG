@@ -1,0 +1,28 @@
+{{- $b := .Site.Data.business -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "{{ $b.full_name }}",
+  "description": "Reg. psykoterapeut og hypnoterapeut i Odense. Hjælp til private, virksomheder og kommuner via TRÅD-metoden.",
+  "url": "{{ .Site.BaseURL }}",
+  "telephone": "{{ $b.phone }}",
+  "email": "{{ $b.email }}",
+  "priceRange": "{{ $b.price_range }}",
+  "openingHours": "{{ $b.opening_hours }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ $b.address.street }}",
+    "addressLocality": "{{ $b.address.city }}",
+    "postalCode": "{{ $b.address.postal_code }}",
+    "addressRegion": "{{ $b.address.region }}",
+    "addressCountry": "{{ $b.address.country }}"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Odense" },
+    { "@type": "AdministrativeArea", "name": "Fyn" },
+    { "@type": "AdministrativeArea", "name": "Syddanmark" }
+  ],
+  "sameAs": ["{{ $b.facebook }}", "{{ $b.trustpilot }}"]
+}
+</script>

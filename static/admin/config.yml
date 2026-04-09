@@ -1,0 +1,100 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: static/images
+public_folder: /images
+
+locale: da
+
+collections:
+  - name: pages
+    label: Sider
+    files:
+      - label: Forside
+        name: index
+        file: content/_index.md
+        fields:
+          - {label: Titel, name: title, widget: string}
+          - {label: Meta-beskrivelse, name: description, widget: text}
+          - {label: Hero titel, name: hero_title, widget: string}
+          - {label: Hero undertitel, name: hero_subtitle, widget: text}
+
+      - label: Om Kristian
+        name: om
+        file: content/om.md
+        fields:
+          - {label: Titel, name: title, widget: string}
+          - {label: Meta-beskrivelse, name: description, widget: text}
+          - {label: Hero titel, name: hero_title, widget: string}
+          - {label: Hero undertitel, name: hero_subtitle, widget: text}
+          - {label: Brødtekst, name: body, widget: markdown}
+
+      - label: Priser
+        name: priser
+        file: content/priser.md
+        fields:
+          - {label: Titel, name: title, widget: string}
+          - {label: Meta-beskrivelse, name: description, widget: text}
+          - {label: Hero titel, name: hero_title, widget: string}
+          - {label: Hero undertitel, name: hero_subtitle, widget: text}
+          - label: Priser
+            name: prices
+            widget: list
+            fields:
+              - {label: Titel, name: title, widget: string}
+              - {label: Pris (tal eller "Gratis"), name: price, widget: string}
+              - {label: Varighed, name: duration, widget: string}
+              - {label: Fremhævet, name: highlighted, widget: boolean, default: false}
+              - {label: Note (valgfri), name: note, widget: text, required: false}
+              - label: Inkluderer
+                name: features
+                widget: list
+                field: {label: Punkt, name: item, widget: string}
+
+      - label: Kontakt
+        name: kontakt
+        file: content/kontakt.md
+        fields:
+          - {label: Titel, name: title, widget: string}
+          - {label: Meta-beskrivelse, name: description, widget: text}
+          - {label: Hero titel, name: hero_title, widget: string}
+          - {label: Hero undertitel, name: hero_subtitle, widget: text}
+          - label: FAQ
+            name: faq
+            widget: list
+            fields:
+              - {label: Spørgsmål, name: q, widget: string}
+              - {label: Svar, name: a, widget: text}
+
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    filter:
+      field: draft
+      value: false
+    fields:
+      - {label: Titel, name: title, widget: string}
+      - {label: Dato, name: date, widget: datetime}
+      - {label: Sidst opdateret, name: updated, widget: datetime, required: false}
+      - {label: Forfatter, name: author, widget: string, default: "Kristian G. G. Dansted"}
+      - {label: Forfatterens credentials, name: author_credentials, widget: string, default: "Reg. Psykoterapeut (FaDP)"}
+      - label: Kategorier
+        name: categories
+        widget: select
+        multiple: true
+        options:
+          - {label: Psykoterapi, value: psykoterapi}
+          - {label: Nervesystemet, value: nervesystemet}
+          - {label: Naturterapi, value: naturterapi}
+          - {label: Virksomheder, value: virksomheder}
+      - {label: Meta-beskrivelse, name: description, widget: text}
+      - {label: Personlig erfaring (valgfri), name: personal_experience, widget: text, required: false}
+      - label: Kilder (valgfri)
+        name: sources
+        widget: list
+        required: false
+        field: {label: URL, name: url, widget: string}
+      - {label: Indhold, name: body, widget: markdown}

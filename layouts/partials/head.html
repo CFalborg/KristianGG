@@ -1,0 +1,43 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+{{- $title := .Title }}
+{{- $desc  := .Description | default .Site.Params.description }}
+{{- $url   := .Permalink }}
+{{- $image := .Params.og_image | default .Site.Params.og_image }}
+{{- $siteTitle := .Site.Title }}
+
+<title>{{ if .IsHome }}{{ $siteTitle }}{{ else }}{{ $title }} | {{ $siteTitle }}{{ end }}</title>
+<meta name="description" content="{{ $desc }}" />
+<link rel="canonical" href="{{ $url }}" />
+
+{{/* Open Graph */}}
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $desc }}" />
+<meta property="og:url" content="{{ $url }}" />
+<meta property="og:site_name" content="{{ $siteTitle }}" />
+{{- with $image }}<meta property="og:image" content="{{ . | absURL }}" />{{ end }}
+
+{{/* Twitter */}}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $desc }}" />
+
+{{/* Sitemap hint */}}
+<meta name="robots" content="index, follow" />
+
+{{/* CSS via Hugo Pipes + PostCSS */}}
+{{- $css := resources.Get "css/main.css" | css.PostCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" />
+
+{{/* JS defer */}}
+{{- $js := resources.Get "js/main.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+
+{{/* Favicon placeholder */}}
+<link rel="icon" href="/favicon.ico" sizes="any" />
+
+{{/* LocalBusiness schema on every page */}}
+{{ partial "jsonld/localbusiness.html" . }}

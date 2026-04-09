@@ -1,0 +1,17 @@
+name = "Kristian GG"
+full_name = "Kristian G. G. Dansted – Reg. Psykoterapeut & Hypnoterapeut"
+phone = "+45 31 50 97 89"
+phone_display = "31 50 97 89"
+email = "kontakt@kristiangg.dk"
+price_range = "450–900 kr"
+opening_hours = "Man–Fre 09:00–17:00"
+booking = "https://fynspsykoterapidk.simplybooking.io/v2/"
+facebook = "https://www.facebook.com/Kristiangg.dk/"
+trustpilot = "https://dk.trustpilot.com/review/kristiangg.dk"
+
+[address]
+street = "Lumbyvej 11, indgang B"
+city = "Odense"
+postal_code = "5000"
+region = "Syddanmark"
+country = "DK"
