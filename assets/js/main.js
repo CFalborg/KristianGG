@@ -75,7 +75,7 @@
       var expanded = sectionTrigger.getAttribute('aria-expanded') === 'true';
       sectionPanel.classList.toggle('hidden', expanded);
       sectionTrigger.setAttribute('aria-expanded', expanded ? 'false' : 'true');
-      var arrow = sectionTrigger.querySelector('[data-mobile-section-arrow]');
+      var arrow = sectionTrigger.querySelector('[data-mobile-arrow]');
       if (arrow) arrow.classList.toggle('rotate-180', !expanded);
     });
   });
