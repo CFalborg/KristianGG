@@ -168,7 +168,7 @@ collections:
           - label: Hjælper med
             name: helps_with
             widget: list
-            field: {label: Punkt, widget: string}
+            field: {label: Punkt, name: item, widget: string}
           - label: FAQ
             name: faq
             widget: list
@@ -221,7 +221,7 @@ collections:
           - label: Hjælper med
             name: helps_with
             widget: list
-            field: {label: Punkt, widget: string}
+            field: {label: Punkt, name: item, widget: string}
           - label: Prisformer
             name: pricing
             widget: list
@@ -373,7 +373,7 @@ collections:
           - label: Målgrupper
             name: target_groups
             widget: list
-            field: {label: Målgruppe, widget: string}
+            field: {label: Målgruppe, name: item, widget: string}
           - {label: CTA overskrift, name: cta_heading, widget: string}
           - {label: CTA tekst, name: cta_text, widget: text}
           - {label: CTA knaptekst, name: cta_button, widget: string}
