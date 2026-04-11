@@ -8,9 +8,12 @@ public_folder: /images
 locale: da
 
 collections:
+
+  # ── Statiske sider ─────────────────────────────────────────────────────────
   - name: pages
     label: Sider
     files:
+
       - label: Forside
         name: index
         file: content/_index.md
@@ -67,6 +70,344 @@ collections:
               - {label: Spørgsmål, name: q, widget: string}
               - {label: Svar, name: a, widget: text}
 
+  # ── Til dig ────────────────────────────────────────────────────────────────
+  - name: til-dig
+    label: Til dig
+    files:
+
+      - label: Til dig – oversigt
+        name: til-dig-index
+        file: content/til-dig/_index.md
+        fields:
+          - {label: Titel, name: title, widget: string}
+          - {label: Meta-beskrivelse, name: description, widget: text}
+          - {label: Hero titel, name: hero_title, widget: string}
+          - {label: Hero undertitel, name: hero_subtitle, widget: text}
+          - label: Ydelser (kort)
+            name: services
+            widget: list
+            fields:
+              - {label: Ikon (emoji), name: icon, widget: string}
+              - {label: Titel, name: title, widget: string}
+              - {label: Beskrivelse, name: description, widget: text}
+              - {label: Link, name: href, widget: string}
+          - label: Leveringsformer
+            name: delivery_formats
+            widget: list
+            fields:
+              - {label: Ikon (emoji), name: icon, widget: string}
+              - {label: Titel, name: title, widget: string}
+              - {label: Beskrivelse, name: desc, widget: string}
+          - {label: Brødtekst, name: body, widget: markdown}
+
+      - label: Naturterapi
+        name: naturterapi
+        file: content/til-dig/naturterapi.md
+        fields:
+          - {label: Titel, name: title, widget: string}
+          - {label: Meta-beskrivelse, name: description, widget: text}
+          - {label: Hero titel, name: hero_title, widget: string}
+          - {label: Hero undertitel, name: hero_subtitle, widget: text}
+          - {label: Ydelsesnavn (schema), name: service_name, widget: string}
+          - {label: Ydelsesbeskrivelse (schema), name: service_desc, widget: text}
+          - label: Sessionstyper
+            name: session_types
+            widget: list
+            fields:
+              - {label: Ikon (emoji), name: icon, widget: string}
+              - {label: Titel, name: title, widget: string}
+              - {label: Beskrivelse, name: desc, widget: text}
+          - {label: CTA overskrift, name: cta_heading, widget: string}
+          - {label: CTA tekst, name: cta_text, widget: text}
+          - {label: Brødtekst, name: body, widget: markdown}
+
+      - label: Nervesystemet & ro
+        name: nervesystemet
+        file: content/til-dig/nervesystemet.md
+        fields:
+          - {label: Titel, name: title, widget: string}
+          - {label: Meta-beskrivelse, name: description, widget: text}
+          - {label: Hero titel, name: hero_title, widget: string}
+          - {label: Hero undertitel, name: hero_subtitle, widget: text}
+          - {label: Ydelsesnavn (schema), name: service_name, widget: string}
+          - {label: Ydelsesbeskrivelse (schema), name: service_desc, widget: text}
+          - label: Metoder
+            name: methods
+            widget: list
+            fields:
+              - {label: Ikon (emoji), name: icon, widget: string}
+              - {label: Titel, name: title, widget: string}
+              - {label: Beskrivelse, name: desc, widget: text}
+          - label: FAQ
+            name: faq
+            widget: list
+            fields:
+              - {label: Spørgsmål, name: q, widget: string}
+              - {label: Svar, name: a, widget: text}
+          - {label: CTA overskrift, name: cta_heading, widget: string}
+          - {label: CTA tekst, name: cta_text, widget: text}
+          - {label: Brødtekst, name: body, widget: markdown}
+
+      - label: Psykoterapi
+        name: psykoterapi
+        file: content/til-dig/psykoterapi.md
+        fields:
+          - {label: Titel, name: title, widget: string}
+          - {label: Meta-beskrivelse, name: description, widget: text}
+          - {label: Hero titel, name: hero_title, widget: string}
+          - {label: Hero undertitel, name: hero_subtitle, widget: text}
+          - {label: Ydelsesnavn (schema), name: service_name, widget: string}
+          - {label: Ydelsesbeskrivelse (schema), name: service_desc, widget: text}
+          - label: Metoder
+            name: methods
+            widget: list
+            fields:
+              - {label: Ikon (emoji), name: icon, widget: string}
+              - {label: Titel, name: title, widget: string}
+              - {label: Beskrivelse, name: desc, widget: text}
+          - label: Hjælper med
+            name: helps_with
+            widget: list
+            field: {label: Punkt, widget: string}
+          - label: FAQ
+            name: faq
+            widget: list
+            fields:
+              - {label: Spørgsmål, name: q, widget: string}
+              - {label: Svar, name: a, widget: text}
+          - {label: CTA overskrift, name: cta_heading, widget: string}
+          - {label: CTA tekst, name: cta_text, widget: text}
+          - {label: Brødtekst, name: body, widget: markdown, required: false}
+
+  # ── Til kommuner ──────────────────────────────────────────────────────────
+  - name: til-kommuner
+    label: Til kommuner
+    files:
+
+      - label: Til kommuner – oversigt
+        name: til-kommuner-index
+        file: content/til-kommuner/_index.md
+        fields:
+          - {label: Titel, name: title, widget: string}
+          - {label: Meta-beskrivelse, name: description, widget: text}
+          - {label: Hero titel, name: hero_title, widget: string}
+          - {label: Hero undertitel, name: hero_subtitle, widget: text}
+          - label: Ydelser (kort)
+            name: services
+            widget: list
+            fields:
+              - {label: Ikon (emoji), name: icon, widget: string}
+              - {label: Titel, name: title, widget: string}
+              - {label: Beskrivelse, name: description, widget: text}
+              - {label: Link, name: href, widget: string}
+          - label: Statistikker
+            name: stats
+            widget: list
+            fields:
+              - {label: Tal/tekst, name: num, widget: string}
+              - {label: Label, name: label, widget: string}
+          - {label: Brødtekst, name: body, widget: markdown}
+
+      - label: Borgerforløb
+        name: borgerforloeb
+        file: content/til-kommuner/borgerforloeb.md
+        fields:
+          - {label: Titel, name: title, widget: string}
+          - {label: Meta-beskrivelse, name: description, widget: text}
+          - {label: Hero titel, name: hero_title, widget: string}
+          - {label: Hero undertitel, name: hero_subtitle, widget: text}
+          - {label: Ydelsesnavn (schema), name: service_name, widget: string}
+          - {label: Ydelsesbeskrivelse (schema), name: service_desc, widget: text}
+          - label: Hjælper med
+            name: helps_with
+            widget: list
+            field: {label: Punkt, widget: string}
+          - label: Prisformer
+            name: pricing
+            widget: list
+            fields:
+              - {label: Titel, name: title, widget: string}
+              - {label: Tekst, name: text, widget: text}
+          - {label: CTA overskrift, name: cta_heading, widget: string}
+          - {label: CTA tekst, name: cta_text, widget: text}
+          - {label: CTA knaptekst, name: cta_button, widget: string}
+          - {label: Brødtekst, name: body, widget: markdown}
+
+      - label: Pæd. særforanstaltninger
+        name: saerforanstaltninger
+        file: content/til-kommuner/saerforanstaltninger.md
+        fields:
+          - {label: Titel, name: title, widget: string}
+          - {label: Meta-beskrivelse, name: description, widget: text}
+          - {label: Hero titel, name: hero_title, widget: string}
+          - {label: Hero undertitel, name: hero_subtitle, widget: text}
+          - {label: Ydelsesnavn (schema), name: service_name, widget: string}
+          - {label: Ydelsesbeskrivelse (schema), name: service_desc, widget: text}
+          - label: Kompetencer
+            name: competencies
+            widget: list
+            fields:
+              - {label: Ikon (emoji), name: icon, widget: string}
+              - {label: Titel, name: title, widget: string}
+              - {label: Beskrivelse, name: desc, widget: text}
+          - label: Praktisk info
+            name: practical
+            widget: list
+            fields:
+              - {label: Label, name: label, widget: string}
+              - {label: Værdi, name: value, widget: string}
+          - {label: CTA overskrift, name: cta_heading, widget: string}
+          - {label: CTA tekst, name: cta_text, widget: text}
+          - {label: CTA knaptekst, name: cta_button, widget: string}
+          - {label: Brødtekst, name: body, widget: markdown}
+
+      - label: Vikardækning
+        name: vikardaekning
+        file: content/til-kommuner/vikardaekning.md
+        fields:
+          - {label: Titel, name: title, widget: string}
+          - {label: Meta-beskrivelse, name: description, widget: text}
+          - {label: Hero titel, name: hero_title, widget: string}
+          - {label: Hero undertitel, name: hero_subtitle, widget: text}
+          - {label: Ydelsesnavn (schema), name: service_name, widget: string}
+          - {label: Ydelsesbeskrivelse (schema), name: service_desc, widget: text}
+          - label: Kompetencer
+            name: competencies
+            widget: list
+            fields:
+              - {label: Ikon (emoji), name: icon, widget: string}
+              - {label: Titel, name: title, widget: string}
+              - {label: Beskrivelse, name: desc, widget: text}
+          - label: Praktisk info
+            name: practical
+            widget: list
+            fields:
+              - {label: Label, name: label, widget: string}
+              - {label: Værdi, name: value, widget: string}
+          - {label: CTA overskrift, name: cta_heading, widget: string}
+          - {label: CTA tekst, name: cta_text, widget: text}
+          - {label: CTA knaptekst, name: cta_button, widget: string}
+          - {label: Brødtekst, name: body, widget: markdown}
+
+  # ── Til virksomheder ──────────────────────────────────────────────────────
+  - name: til-virksomheder
+    label: Til virksomheder
+    files:
+
+      - label: Til virksomheder – oversigt
+        name: til-virksomheder-index
+        file: content/til-virksomheder/_index.md
+        fields:
+          - {label: Titel, name: title, widget: string}
+          - {label: Meta-beskrivelse, name: description, widget: text}
+          - {label: Hero titel, name: hero_title, widget: string}
+          - {label: Hero undertitel, name: hero_subtitle, widget: text}
+          - label: Ydelser (kort)
+            name: services
+            widget: list
+            fields:
+              - {label: Ikon (emoji), name: icon, widget: string}
+              - {label: Titel, name: title, widget: string}
+              - {label: Beskrivelse, name: description, widget: text}
+              - {label: Link, name: href, widget: string}
+          - label: Statistikker
+            name: stats
+            widget: list
+            fields:
+              - {label: Tal/tekst, name: num, widget: string}
+              - {label: Label, name: label, widget: string}
+          - {label: Brødtekst, name: body, widget: markdown}
+
+      - label: Foredrag
+        name: foredrag
+        file: content/til-virksomheder/foredrag.md
+        fields:
+          - {label: Titel, name: title, widget: string}
+          - {label: Meta-beskrivelse, name: description, widget: text}
+          - {label: Hero titel, name: hero_title, widget: string}
+          - {label: Hero undertitel, name: hero_subtitle, widget: text}
+          - {label: Ydelsesnavn (schema), name: service_name, widget: string}
+          - {label: Ydelsesbeskrivelse (schema), name: service_desc, widget: text}
+          - label: Emner
+            name: topics
+            widget: list
+            fields:
+              - {label: Ikon (emoji), name: icon, widget: string}
+              - {label: Titel, name: title, widget: string}
+              - {label: Beskrivelse, name: desc, widget: text}
+          - label: Praktisk info
+            name: practical
+            widget: list
+            fields:
+              - {label: Label, name: label, widget: string}
+              - {label: Værdi, name: value, widget: string}
+          - {label: CTA overskrift, name: cta_heading, widget: string}
+          - {label: CTA tekst, name: cta_text, widget: text}
+          - {label: CTA knaptekst, name: cta_button, widget: string}
+          - {label: Brødtekst, name: body, widget: markdown}
+
+      - label: Medarbejdertrivsel
+        name: trivsel
+        file: content/til-virksomheder/trivsel.md
+        fields:
+          - {label: Titel, name: title, widget: string}
+          - {label: Meta-beskrivelse, name: description, widget: text}
+          - {label: Hero titel, name: hero_title, widget: string}
+          - {label: Hero undertitel, name: hero_subtitle, widget: text}
+          - {label: Ydelsesnavn (schema), name: service_name, widget: string}
+          - {label: Ydelsesbeskrivelse (schema), name: service_desc, widget: text}
+          - label: Formater
+            name: formats
+            widget: list
+            fields:
+              - {label: Ikon (emoji), name: icon, widget: string}
+              - {label: Titel, name: title, widget: string}
+              - {label: Beskrivelse, name: desc, widget: text}
+          - label: Proces (trin)
+            name: process
+            widget: list
+            fields:
+              - {label: Trin nr., name: step, widget: string}
+              - {label: Titel, name: title, widget: string}
+              - {label: Tekst, name: text, widget: text}
+          - label: Målgrupper
+            name: target_groups
+            widget: list
+            field: {label: Målgruppe, widget: string}
+          - {label: CTA overskrift, name: cta_heading, widget: string}
+          - {label: CTA tekst, name: cta_text, widget: text}
+          - {label: CTA knaptekst, name: cta_button, widget: string}
+          - {label: Brødtekst, name: body, widget: markdown, required: false}
+
+      - label: Workshops
+        name: workshops
+        file: content/til-virksomheder/workshops.md
+        fields:
+          - {label: Titel, name: title, widget: string}
+          - {label: Meta-beskrivelse, name: description, widget: text}
+          - {label: Hero titel, name: hero_title, widget: string}
+          - {label: Hero undertitel, name: hero_subtitle, widget: text}
+          - {label: Ydelsesnavn (schema), name: service_name, widget: string}
+          - {label: Ydelsesbeskrivelse (schema), name: service_desc, widget: text}
+          - label: Temaer
+            name: themes
+            widget: list
+            fields:
+              - {label: Ikon (emoji), name: icon, widget: string}
+              - {label: Titel, name: title, widget: string}
+              - {label: Beskrivelse, name: desc, widget: text}
+          - label: Praktisk info
+            name: practical
+            widget: list
+            fields:
+              - {label: Label, name: label, widget: string}
+              - {label: Værdi, name: value, widget: string}
+          - {label: CTA overskrift, name: cta_heading, widget: string}
+          - {label: CTA tekst, name: cta_text, widget: text}
+          - {label: CTA knaptekst, name: cta_button, widget: string}
+          - {label: Brødtekst, name: body, widget: markdown, required: false}
+
+  # ── Blog ───────────────────────────────────────────────────────────────────
   - name: blog
     label: Blog
     folder: content/blog
