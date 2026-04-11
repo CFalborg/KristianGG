@@ -39,8 +39,7 @@
 {{/* Favicon placeholder */}}
 <link rel="icon" href="/favicon.ico" sizes="any" />
 
-{{/* Netlify Identity – redirects back to /admin after login */}}
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+{{/* Netlify Identity – post-login redirect to /admin (widget itself lives in /admin/index.html) */}}
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", function(user) {
