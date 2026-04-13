@@ -4,7 +4,7 @@
 
 [build.environment]
   HUGO_VERSION = "0.147.0"
-  NODE_VERSION = "20"
+  NODE_VERSION = "24"
 
 # ── Old kristiangg.dk pages → new structure (301 preserves SEO equity) ────────
 [[redirects]]
