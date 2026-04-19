@@ -31,6 +31,25 @@ values:
   - icon: "❤️"
     title: "Menneskesyn"
     desc: "Jeg tror på at alle mennesker bærer på ressourcer og kapacitet til forandring – min opgave er at hjælpe dem frem."
+
+fadp:
+  heading: "Registreret under Foreningen af Danske Psykoterapeuter"
+  logo: "/images/fadp-logo.png"
+  link: "https://www.fadp.dk/"
+  text: |
+    Jeg er medlem af Foreningen af Danske Psykoterapeuter (FaDP) og arbejder frivilligt som politisk rådgiver i foreningen.
+
+    For mig handler det ikke om titel – det handler om at tage ansvar.
+    For fagligheden.
+    For relationen.
+    For det menneske, jeg sidder overfor.
+
+    Jeg arbejder inden for FaDP's etiske rammer. Det betyder, at der er nogle klare retningslinjer for, hvordan jeg arbejder – og at der er et etisk råd, man kan gå til, hvis der opstår tvivl eller spørgsmål.
+
+    Samtidig er registrerede psykoterapeuter underlagt tilsyn fra Styrelsen for Patientsikkerhed. Det er med til at sikre en vis kvalitet og gennemsigtighed i det arbejde, jeg laver.
+
+    Min rolle som politisk rådgiver betyder, at jeg ikke kun sidder i samtalerummet – jeg er også med til at påvirke, hvordan faget udvikler sig.
+    Det holder mig nysgerrig. Og det forpligter.
 ---
 
 ## Min historie
