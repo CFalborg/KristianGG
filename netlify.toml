@@ -5,6 +5,7 @@
 [build.environment]
   HUGO_VERSION = "0.147.0"
   NODE_VERSION = "24"
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
 
 # ── Old kristiangg.dk pages → new structure (301 preserves SEO equity) ────────
 [[redirects]]
