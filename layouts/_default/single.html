@@ -65,9 +65,32 @@
 </section>
 {{- end }}
 
+{{/* FaDP section (om-siden) */}}
+{{- with $p.fadp }}
+<section class="section-padding bg-bg-cream">
+  <div class="container-width px-4 sm:px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-2xl font-bold text-text-dark mb-6">{{ .heading }}</h2>
+        <div class="prose prose-gray prose-p:text-text-muted prose-p:leading-relaxed max-w-none">
+          {{ .text | markdownify }}
+        </div>
+        <a href="{{ .link }}" target="_blank" rel="noopener"
+           class="inline-block mt-6 text-primary font-semibold hover:underline text-sm">Læs mere på fadp.dk →</a>
+      </div>
+      <div class="flex justify-center">
+        {{- with .logo }}
+        <img src="{{ . }}" alt="FaDP – Foreningen af Danske Psykoterapeuter"
+             class="w-56 h-56 object-contain" />
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{- end }}
+
 {{/* Price cards (priser-siden) */}}
-{{- with $p.prices }}
-<section class="section-padding {{ if not $.Params.credentials }}bg-bg-cream{{ end }}">
+{{- with $p.prices }}<section class="section-padding {{ if not $.Params.credentials }}bg-bg-cream{{ end }}">
   <div class="container-width px-4 sm:px-6">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {{- range . }}
