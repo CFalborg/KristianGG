@@ -30,7 +30,7 @@ practical:
   - label: "Varighed"
     value: "2–4 timer (tilpasses)"
   - label: "Deltagere"
-    value: "5–50 personer"
+    value: "20–250 personer"
   - label: "Lokation"
     value: "Hos jer eller i Odense"
   - label: "Format"
