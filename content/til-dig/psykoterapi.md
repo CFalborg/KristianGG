@@ -1,7 +1,7 @@
 ---
 title: "Psykoterapi i Odense – Hypnose, NLP, KAT & Samtaleterapi"
 description: "Professionel psykoterapi i Odense. Reg. psykoterapeut der kombinerer hypnoterapi, NLP, KAT og samtaleterapi. I klinikken, online eller hjemme hos dig på Fyn."
-hero_title: "Psykoterapi i Odense"
+hero_title: "Reg. Psykoterapeut"
 hero_subtitle: "Helhedsorienteret psykoterapi der kombinerer det bedste fra samtaleterapi, hypnoterapi, NLP og kognitive metoder. Tilpasset netop dig."
 service_name: "Psykoterapi i Odense"
 service_desc: "Reg. psykoterapeut der kombinerer hypnoterapi, NLP, KAT, DAT og samtaleterapi. I klinikken, online eller hjemme."
