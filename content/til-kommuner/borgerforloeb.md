@@ -1,8 +1,8 @@
 ---
 title: "Borgerforløb – Psykoterapi henvist af kommune på Fyn"
 description: "Individuelle terapeutiske forløb for borgere henvist af kommunen. Reg. psykoterapeut i Odense tilbyder støtte til borgere med stress, angst og sociale udfordringer på Fyn."
-hero_title: "Borgerforløb"
-hero_subtitle: "Individuelle terapeutiske forløb for borgere der har brug for professionel støtte – enten som selvbetaler eller via kommunal aftale."
+hero_title: "Terapeutiske enkelt- og gruppeforløb"
+hero_subtitle: "Professionelle forløb for borgere med behov for målrettet støtte – individuelt eller i gruppe, som selvbetaler eller via kommunal aftale."
 service_name: "Borgerforløb – kommunal henvisning"
 service_desc: "Individuelle terapeutiske forløb for borgere henvist af kommunen. Reg. psykoterapeut i Odense."
 
@@ -31,6 +31,10 @@ cta_text: "Kontakt mig for en uforpligtende snak om borgerforløb og mulige afta
 cta_button: "Kontakt for samarbejde"
 ---
 
-Mange borgere der modtager kommunal støtte vil profitere af et terapeutisk forløb som supplement til den sociale indsats. Som reg. psykoterapeut med bred metodisk baggrund kan Kristian tilbyde kortere forløb (4–8 sessioner) der konkret styrker borgerens mentale sundhed, mestringsevne og livskvalitet.
+Mange borgere, der modtager social eller kommunal støtte, har gavn af et terapeutisk forløb som supplement til den eksisterende indsats. Kristian tilbyder både individuelle forløb og gruppeforløb, hvor der arbejdes med mental sundhed, regulering af nervesystemet, mestring og livskvalitet.
 
-Forløbene kan aftales direkte med kommunen som en del af borgerens indsatsplan, eller borgeren kan henvende sig selvstændigt. Alle forløb er fortrolige og professionelt håndteret.
+De individuelle forløb giver mulighed for målrettet og dybdegående arbejde med den enkelte borgers udfordringer, mens gruppeforløb skaber en ramme for spejling, fællesskab og udvikling i relation til andre. Begge formater tager afsæt i en anerkendende og traumeinformeret tilgang.
+
+Med en bred terapeutisk baggrund arbejdes der ikke kun med adfærd og refleksion, men også med de underliggende psykologiske og kropslige mekanismer, der påvirker trivsel og handlemuligheder.
+
+Forløb kan etableres som en del af en kommunal indsatsplan i samarbejde med sagsbehandler, eller igangsættes på borgerens eget initiativ. Alle forløb gennemføres fortroligt og med høj faglig standard.
