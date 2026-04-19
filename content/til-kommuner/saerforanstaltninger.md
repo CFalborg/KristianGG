@@ -36,6 +36,7 @@ practical:
   - label: "Samarbejdsform"
     value: "Direkte aftale eller via leverandøraftale"
 
+show_fadp_badge: true
 cta_heading: "Lad os tale om jeres behov"
 cta_text: "Tag kontakt for en uforpligtende snak om, hvordan jeg kan bidrage til jeres særforanstaltninger."
 cta_button: "Kontakt for samarbejde"

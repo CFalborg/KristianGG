@@ -36,6 +36,7 @@ practical:
   - label: "Timebasis eller aftale"
     value: "Tilpasses jeres behov"
 
+show_fadp_badge: true
 cta_heading: "Har I brug for en faglig vikar?"
 cta_text: "Kontakt mig for en snak om jeres behov og mine muligheder for at hjælpe."
 cta_button: "Kontakt for samarbejde"

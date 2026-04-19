@@ -26,6 +26,7 @@ pricing:
   - title: "Abonnementsmodel"
     text: "Fast månedlig aftale der sikrer en vis kapacitet til kommunens borgere. Fleksibel og forudsigelig."
 
+show_fadp_badge: true
 cta_heading: "Interesseret i et samarbejde?"
 cta_text: "Kontakt mig for en uforpligtende snak om borgerforløb og mulige aftaleformer."
 cta_button: "Kontakt for samarbejde"
