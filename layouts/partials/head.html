@@ -26,7 +26,7 @@
 <meta name="twitter:description" content="{{ $desc }}" />
 
 {{/* Sitemap hint */}}
-<meta name="robots" content="index, follow" />
+<meta name="robots" content="{{ if .Params.noindex }}noindex, nofollow{{ else }}index, follow{{ end }}" />
 
 {{/* CSS via Hugo Pipes + PostCSS */}}
 {{- $css := resources.Get "css/main.css" | css.PostCSS | minify | fingerprint }}
