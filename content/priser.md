@@ -27,7 +27,7 @@ prices:
       - Betaling forud via MobilePay
     highlighted: false
   - title: Session
-    price: "650"
+    price: "900"
     duration: 60 minutter · Klinik eller online
     features:
       - Fuld terapeutisk session
@@ -36,7 +36,7 @@ prices:
       - Hjemmeøvelser inkluderet
     highlighted: false
   - title: Fuld session
-    price: "900"
+    price: "1200"
     duration: 90 minutter · Klinik eller online
     features:
       - Udvidet terapeutisk session
@@ -44,4 +44,31 @@ prices:
       - Alle metoder i spil
       - Anbefales til nye klienter
     highlighted: true
+  - title: Naturterapi – Halv dag
+    price: "3600"
+    duration: 6 timer · Naturen på Fyn
+    features:
+      - Terapeutisk vandring i naturen
+      - Åndedrætsterapi og somatiske øvelser
+      - Individuel tilpasning
+      - Inkl. transport på Fyn
+    highlighted: false
+  - title: Naturterapi – Hel dag
+    price: "6000"
+    duration: 12 timer · Naturen på Fyn
+    features:
+      - Fuld dag i naturen
+      - Fordybelse og relationsarbejde
+      - Alle naturlige metoder i spil
+      - Inkl. transport på Fyn
+    highlighted: false
+  - title: Naturterapi – Intensiv
+    price: "9000"
+    duration: 24 timer · Naturen på Fyn
+    features:
+      - Intensivt naturforløb over to dage
+      - Dybdegående terapeutisk arbejde
+      - Overnatning i naturen
+      - Inkl. transport på Fyn
+    highlighted: false
 ---
