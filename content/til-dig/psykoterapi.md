@@ -42,7 +42,7 @@ helps_with:
 
 faq:
   - q: "Hvad er forskellen på en psykolog og en psykoterapeut?"
-    a: "En psykolog er akademisk uddannet (cand.psych.) og autoriseret af Psykolognævnet. En reg. psykoterapeut er uddannet på terapeutuddannelse og certificeret af FaDP (Foreningen af Danske Psykoterapeuter). Begge arbejder terapeutisk, men har forskellig baggrund og tilgang. Kristian er reg. psykoterapeut (FaDP) med supplerende uddannelser i hypnoterapi, NLP og kognitive metoder."
+    a: "En psykolog er akademisk uddannet (cand.psych.) og autoriseret af Psykolognævnet. En reg. psykoterapeut er uddannet på terapeutuddannelse og certificeret af FaDP (Foreningen af Danske Psykoterapeuter). Begge arbejder terapeutisk, men har forskellig baggrund og tilgang. Kristian er reg. psykoterapeut (FaDP) med supplerende uddannelser i hypnoterapi, NLP og kognitive metoder. Reg. Psykoterapeuter er underlagt kontrol af Styrelsen for Patientsikkerhed."
   - q: "Er hypnose farligt?"
     a: "Nej. Under hypnose er du altid fuldt bevidst og i kontrol. Du kan aldrig tvinges til at sige eller gøre noget imod din vilje. Hypnose er en naturlig, fokuseret tilstand – ikke søvn og ikke bevidstløshed."
   - q: "Kan jeg få terapi hjemmefra?"
