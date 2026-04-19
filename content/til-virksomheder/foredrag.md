@@ -51,6 +51,6 @@ cta_button: "Kontakt for tilbud"
 
 Foredraget kombinerer neuropsykologi, mindfulness og konkrete teknikker – og slutter altid med en fælles øvelse som deltagerne kan bruge allerede samme aften.
 
-> "Kristian formåede at gøre kompleks viden om hjernen letforståelig og underholdende. Alle deltagere forlod med noget de konkret kunne bruge."
+> "Tak til Kristian GG, Kursus og Workshop, for nogle fantastiske breathworkshops på Danish Vanlife Festival. Begge sessions var velbesøgte og med forespørgsel om flere. Kristian er både super nærværende i sit arbejde og er kompetent og lun i sin tilgang til at arbejde med kroppen. Vi glæder os til at have Kristian tilbage næste år. Hvis jeres forening eller firma skal have en alternativ oplevelse eller dygtig breathwork-formidler, kan jeg varmt anbefale Kristian."
 >
-> — HR-chef, mellemstor virksomhed på Fyn
+> — Christian, Danish Vanlife Festival

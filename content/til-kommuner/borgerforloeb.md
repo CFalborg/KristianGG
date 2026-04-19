@@ -20,7 +20,7 @@ helps_with:
 
 pricing:
   - title: "Individuel aftale"
-    text: "Borgeren betaler selv. Normal session 60 min: 650 kr. Ungestøtte 60 min: 400 kr (forudsætter kommunal aftale)."
+    text: "Borgeren betaler selv, kontakt for pris."
   - title: "Kommunal leverandøraftale"
     text: "Kommunen indgår en rammeaftale der giver borgere adgang til sessioner til favorabel pris. Kontakt for vilkår."
   - title: "Abonnementsmodel"
