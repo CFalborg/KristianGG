@@ -19,9 +19,9 @@ services:
     href: "/til-virksomheder/trivsel"
 
 stats:
-  - num: "↓35%"
-    label: "Gennemsnitlig reduktion i stressniveau"
-  - num: "+40%"
+  - num: "↓"
+    label: "Reduktion i stressniveau"
+  - num: "↑"
     label: "Øget arbejdsglæde efter trivselsprogram"
   - num: "1 dag"
     label: "Workshop giver redskaber der varer"
