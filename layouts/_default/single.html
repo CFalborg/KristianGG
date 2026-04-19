@@ -71,7 +71,7 @@
   <div class="container-width px-4 sm:px-6">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {{- range . }}
-      <div class="card relative {{ if .highlighted }}border-primary border-2{{ end }}">
+      <div class="card relative flex flex-col {{ if .highlighted }}border-primary border-2{{ end }}">
         {{- if .highlighted }}<div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap">Mest populær</div>{{- end }}
         <h3 class="font-bold text-text-dark mb-2">{{ .title }}</h3>
         <div class="mb-1">
@@ -92,7 +92,7 @@
         {{- with .note }}<p class="text-text-muted text-xs italic border-t border-gray-100 pt-3 mt-3">{{ . }}</p>{{- end }}
         {{- with .booking_url }}
         <a href="{{ . }}" target="_blank" rel="noopener"
-           class="mt-4 w-full inline-block text-center btn-primary text-sm py-2">Book nu</a>
+           class="mt-auto pt-4 w-full inline-block text-center btn-primary text-sm py-2">Book nu</a>
         {{- end }}
       </div>
       {{- end }}
