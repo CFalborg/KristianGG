@@ -4,7 +4,7 @@ description: "Professionel psykoterapi i Odense. Reg. psykoterapeut der kombiner
 hero_title: "Reg. Psykoterapeut"
 hero_subtitle: "Helhedsorienteret psykoterapi der kombinerer det bedste fra samtaleterapi, hypnoterapi, NLP og kognitive metoder. Tilpasset netop dig."
 service_name: "Psykoterapi i Odense"
-service_desc: "Reg. psykoterapeut der kombinerer hypnoterapi, NLP, KAT, DAT og samtaleterapi. I klinikken, online eller hjemme."
+service_desc: "Reg. psykoterapeut der kombinerer hypnoterapi, NLP, KAT, naturterapi og samtaleterapi. I klinikken, online eller hjemme."
 
 methods:
   - icon: "💬"
@@ -19,9 +19,9 @@ methods:
   - icon: "🔄"
     title: "KAT"
     desc: "Kognitiv Adfærdsterapi – identificer og udfordre negative automatiske tanker og adfærdsmønstre."
-  - icon: "🌊"
-    title: "DAT"
-    desc: "Dialektisk Adfærdsterapi – styrk følelsesregulering og mellemmenneskelige færdigheder."
+  - icon: "🌿"
+    title: "Naturterapi"
+    desc: "Terapeutiske samtaler og øvelser i naturen på Fyn – bevægelse, frisk luft og naturlige omgivelser understøtter den terapeutiske proces."
   - icon: "💨"
     title: "Åndedrætsterapi"
     desc: "Direkte nervesystemsregulering via vejrtrækning. Hurtigt virkende og let at integrere i hverdagen."
