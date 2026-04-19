@@ -149,6 +149,36 @@
   to = "/til-dig/naturterapi"
   status = 301
 
+[[redirects]]
+  from = "/betingelser-og-vilkar"
+  to = "/betingelser"
+  status = 301
+
+[[redirects]]
+  from = "/betingelser-og-vilkar/"
+  to = "/betingelser"
+  status = 301
+
+[[redirects]]
+  from = "/databeskyttelse"
+  to = "/betingelser"
+  status = 301
+
+[[redirects]]
+  from = "/databeskyttelse/"
+  to = "/betingelser"
+  status = 301
+
+[[redirects]]
+  from = "/faq"
+  to = "/til-dig/psykoterapi"
+  status = 301
+
+[[redirects]]
+  from = "/faq/"
+  to = "/til-dig/psykoterapi"
+  status = 301
+
 # ── Trailing-slash normalisation (new pages) ─────────────────────────────────
 [[redirects]]
   from = "/priser/"
