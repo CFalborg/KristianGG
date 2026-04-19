@@ -32,15 +32,15 @@ audiences:
 
 traad:
   - letter: "T"
-    word: "Tilknytning"
-    desc: "Trygge relationer som fundament. Relation før metode – altid."
+    word: "Tryg tilstedeværelse"
+    desc: "Et trygt rum og en nærværende relation er forudsætningen for forandring."
   - letter: "R"
-    word: "Regulering"
-    desc: "Nervesystemsregulering og kropsbevidsthed som indgang til forandring."
+    word: "Relation"
+    desc: "Den terapeutiske relation er ikke midlet – den er en del af behandlingen."
   - letter: "Å"
-    word: "Ånde"
+    word: "Åndedræt"
     desc: "Åndedrætsterapi og somatisk forankring aktiverer det parasympatiske system."
   - letter: "D"
-    word: "Dybde"
-    desc: "Kognitiv og hypnoterapeutisk dybdebehandling forankrer varig forandring."
+    word: "Deltagelse"
+    desc: "Aktiv deltagelse og medejerskab i processen skaber varig forandring."
 ---

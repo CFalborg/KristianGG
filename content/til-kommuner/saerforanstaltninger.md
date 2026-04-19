@@ -1,8 +1,8 @@
 ---
 title: "Pæd. særforanstaltninger – Ungestøtte & botilbud på Fyn"
 description: "Specialiseret pædagogisk støtte og særforanstaltninger til udsatte unge og borgere med komplekse behov. Erfaring fra botilbud og asylcenter. Fyn og Syddanmark."
-hero_title: "Pæd. særforanstaltninger"
-hero_subtitle: "Specialiseret pædagogisk bistand til udsatte unge og borgere med komplekse behov – baseret på solid erfaring fra botilbud og asylcenter kombineret med terapeutisk baggrund."
+hero_title: "Vikardækning til pædagogiske særforanstaltninger"
+hero_subtitle: "Specialiseret og stabil vikarbistand til udsatte unge og borgere med komplekse behov – med afsæt i solid erfaring fra botilbud og asylcenter kombineret med terapeutisk baggrund."
 service_name: "Pædagogiske særforanstaltninger"
 service_desc: "Specialiseret pædagogisk støtte til udsatte unge og borgere med komplekse behov på Fyn og i Syddanmark."
 
@@ -41,8 +41,10 @@ cta_text: "Tag kontakt for en uforpligtende snak om, hvordan jeg kan bidrage til
 cta_button: "Kontakt for samarbejde"
 ---
 
-I arbejdet med udsatte borgere og unge er relationen altid fundamentet. Kristian arbejder med en anerkendende, traumeinformeret tilgang der møder borgeren der, hvor de er – og skaber de betingelser der gør forandring mulig.
+I særforanstaltninger er kontinuitet, relationsarbejde og faglig ro afgørende. Kristian træder ind som vikar med fokus på at skabe stabilitet i situationer, hvor belastningen er høj, og hvor relationen er under pres.
 
-Den terapeutiske baggrund betyder at Kristian ikke kun arbejder med adfærd og struktur, men forstår de psykologiske og nervesystemsmæssige mekanismer bag uhensigtsmæssig adfærd og kan arbejde med dem direkte.
+Arbejdet tager afsæt i en anerkendende og traumeinformeret tilgang, hvor borgeren mødes der, hvor vedkommende er. Målet er ikke blot at opretholde drift, men at understøtte regulering, reducere konfliktniveau og bevare den faglige retning i indsatsen.
 
-Erfaring med dokumentation, handleplaner og tværfagligt samarbejde med kommunale sagsbehandlere, psykologer og socialrådgivere sikrer professionel kommunikation på alle niveauer.
+Den terapeutiske baggrund betyder, at der arbejdes direkte med de underliggende psykologiske og nervesystemsmæssige mekanismer bag adfærd. Det gør det muligt at handle kvalificeret – også i pressede og uforudsigelige situationer.
+
+Der er solid erfaring med dokumentation, handleplansarbejde og tværfagligt samarbejde med kommunale sagsbehandlere, psykologer og socialrådgivere. Det sikrer en professionel og præcis kommunikation – både i akutte indsatser og i den løbende opfølgning.

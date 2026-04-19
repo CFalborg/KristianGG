@@ -1,10 +1,10 @@
 ---
 title: "Psykoterapi i Odense – Hypnose, NLP, KAT & Samtaleterapi"
 description: "Professionel psykoterapi i Odense. Reg. psykoterapeut der kombinerer hypnoterapi, NLP, KAT og samtaleterapi. I klinikken, online eller hjemme hos dig på Fyn."
-hero_title: "Psykoterapi i Odense"
+hero_title: "Reg. Psykoterapeut"
 hero_subtitle: "Helhedsorienteret psykoterapi der kombinerer det bedste fra samtaleterapi, hypnoterapi, NLP og kognitive metoder. Tilpasset netop dig."
 service_name: "Psykoterapi i Odense"
-service_desc: "Reg. psykoterapeut der kombinerer hypnoterapi, NLP, KAT, DAT og samtaleterapi. I klinikken, online eller hjemme."
+service_desc: "Reg. psykoterapeut der kombinerer hypnoterapi, NLP, KAT, naturterapi og samtaleterapi. I klinikken, online eller hjemme."
 
 methods:
   - icon: "💬"
@@ -19,9 +19,9 @@ methods:
   - icon: "🔄"
     title: "KAT"
     desc: "Kognitiv Adfærdsterapi – identificer og udfordre negative automatiske tanker og adfærdsmønstre."
-  - icon: "🌊"
-    title: "DAT"
-    desc: "Dialektisk Adfærdsterapi – styrk følelsesregulering og mellemmenneskelige færdigheder."
+  - icon: "🌿"
+    title: "Naturterapi"
+    desc: "Terapeutiske samtaler og øvelser i naturen på Fyn – bevægelse, frisk luft og naturlige omgivelser understøtter den terapeutiske proces."
   - icon: "💨"
     title: "Åndedrætsterapi"
     desc: "Direkte nervesystemsregulering via vejrtrækning. Hurtigt virkende og let at integrere i hverdagen."
@@ -42,7 +42,7 @@ helps_with:
 
 faq:
   - q: "Hvad er forskellen på en psykolog og en psykoterapeut?"
-    a: "En psykolog er akademisk uddannet (cand.psych.) og autoriseret af Psykolognævnet. En reg. psykoterapeut er uddannet på terapeutuddannelse og certificeret af FaDP (Foreningen af Danske Psykoterapeuter). Begge arbejder terapeutisk, men har forskellig baggrund og tilgang. Kristian er reg. psykoterapeut (FaDP) med supplerende uddannelser i hypnoterapi, NLP og kognitive metoder."
+    a: "En psykolog er akademisk uddannet (cand.psych.) og autoriseret af Psykolognævnet. En reg. psykoterapeut er uddannet på terapeutuddannelse og certificeret af FaDP (Foreningen af Danske Psykoterapeuter). Begge arbejder terapeutisk, men har forskellig baggrund og tilgang. Kristian er reg. psykoterapeut (FaDP) med supplerende uddannelser i hypnoterapi, NLP og kognitive metoder. Reg. Psykoterapeuter er underlagt kontrol af Styrelsen for Patientsikkerhed."
   - q: "Er hypnose farligt?"
     a: "Nej. Under hypnose er du altid fuldt bevidst og i kontrol. Du kan aldrig tvinges til at sige eller gøre noget imod din vilje. Hypnose er en naturlig, fokuseret tilstand – ikke søvn og ikke bevidstløshed."
   - q: "Kan jeg få terapi hjemmefra?"
