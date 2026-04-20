@@ -18,6 +18,10 @@ services:
     description: "Individuelle eller gruppebaserede trivselsprogrammer der styrker medarbejdernes mentale sundhed og arbejdsglæde."
     href: "/til-virksomheder/trivsel"
 
+kurser_callout:
+  title: "Kurser og forløb til organisationer"
+  desc: "Regulering og stressforebyggelse i praksis for medarbejdere i sociale indsatser."
+
 stats:
   - num: "↓"
     label: "Reduktion i stressniveau"
