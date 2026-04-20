@@ -62,7 +62,20 @@
         </div>
       </div>
 
-      <a href="/kurser"  class="nav-link">Kurser</a>
+      {{/* Kurser */}}
+      <div class="relative" data-dropdown>
+        <a href="/kurser" class="nav-link flex items-center gap-1" data-dropdown-trigger aria-expanded="false" aria-haspopup="true">
+          Kurser
+          <svg class="w-3.5 h-3.5 transition-transform" data-dropdown-arrow fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </a>
+        <div class="dropdown-panel hidden" data-dropdown-panel>
+          <a href="/kurser"           class="dropdown-item">Til dig som privatperson</a>
+          <a href="/til-organisationer" class="dropdown-item">Til din organisation</a>
+        </div>
+      </div>
+
       <a href="/blog"    class="nav-link">Blog</a>
       <a href="/priser"  class="nav-link">Priser</a>
       <a href="/kontakt" class="nav-link">Kontakt</a>
@@ -126,7 +139,16 @@
         </div>
       </div>
 
-      <a href="/kurser"  class="mobile-link block">Kurser</a>
+      <div data-mobile-section>
+        <button class="mobile-section-btn" data-mobile-section-trigger>
+          Kurser <svg class="w-4 h-4 ml-auto transition-transform" data-mobile-arrow fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="hidden pl-4 space-y-1 mt-1" data-mobile-section-panel>
+          <a href="/kurser"            class="mobile-link">Til dig som privatperson</a>
+          <a href="/til-organisationer" class="mobile-link">Til din organisation</a>
+        </div>
+      </div>
+
       <a href="/blog"    class="mobile-link block">Blog</a>
       <a href="/priser"  class="mobile-link block">Priser</a>
       <a href="/kontakt" class="mobile-link block">Kontakt</a>
