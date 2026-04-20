@@ -18,6 +18,10 @@ services:
     description: "Individuelle terapeutiske forløb for borgere henvist af kommunen. Støtte til borgere med stress, angst og sociale udfordringer."
     href: "/til-kommuner/borgerforloeb"
 
+kurser_callout:
+  title: "Kurser og forløb til organisationer"
+  desc: "Regulering og stressforebyggelse i praksis for medarbejdere i sociale indsatser og kommunale institutioner."
+
 stats:
   - num: "2019"
     label: "Ildsjælepris for frivilligt socialt arbejde"

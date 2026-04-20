@@ -53,6 +53,20 @@
 </section>
 {{- end }}
 
+{{/* Kurser callout */}}
+{{- with $p.kurser_callout }}
+<section class="py-6 px-4 sm:px-6 bg-primary-light border-y border-primary border-opacity-20">
+  <div class="container-width flex flex-col sm:flex-row items-center gap-6">
+    <div class="flex-1 text-center sm:text-left">
+      <p class="text-primary font-semibold text-sm uppercase tracking-wide mb-1">Kurser</p>
+      <h3 class="font-bold text-text-dark mb-1">{{ .title }}</h3>
+      <p class="text-text-muted text-sm">{{ .desc }}</p>
+    </div>
+    <a href="/kurser" class="btn-primary text-sm py-2 px-5 whitespace-nowrap flex-shrink-0">Se kurser →</a>
+  </div>
+</section>
+{{- end }}
+
 {{/* Body content */}}
 {{- with .Content }}
 <section class="section-padding bg-bg-cream">
