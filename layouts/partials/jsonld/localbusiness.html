@@ -3,7 +3,9 @@
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": "{{ .Site.BaseURL }}",
   "name": "{{ $b.full_name }}",
+  "image": "{{ $b.image }}",
   "description": "Reg. psykoterapeut og hypnoterapeut i Odense. Hjælp til private, virksomheder og kommuner via TRÅD-metoden.",
   "url": "{{ .Site.BaseURL }}",
   "telephone": "{{ $b.phone }}",

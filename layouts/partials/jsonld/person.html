@@ -9,7 +9,7 @@
   "telephone": "{{ $b.phone }}",
   "email": "{{ $b.email }}",
   "award": "Ildsjælepris 2019",
-  "worksFor": { "@type": "LocalBusiness", "name": "{{ $b.full_name }}" },
+  "worksFor": { "@type": "LocalBusiness", "@id": "{{ .Site.BaseURL }}", "name": "{{ $b.full_name }}" },
   "hasCredential": [
     { "@type": "EducationalOccupationalCredential", "name": "Reg. Psykoterapeut (FaDP)" },
     { "@type": "EducationalOccupationalCredential", "name": "Master Neuro Hypnoterapeut" },
