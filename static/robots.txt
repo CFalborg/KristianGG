@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /tak/
+
+Sitemap: https://kristiangg.dk/sitemap.xml
