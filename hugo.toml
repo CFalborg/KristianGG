@@ -5,7 +5,7 @@ title = "Kristian GG – Psykoterapeut & Hypnoterapeut i Odense"
 
 [params]
   description = "Reg. psykoterapeut og hypnoterapeut i Odense. Hjælp til private, virksomheder og kommuner via TRÅD-metoden."
-  og_image = "/og-default.jpg"
+  og_image = "/images/kristian-hero.png"
 
 [taxonomies]
   category = "categories"
