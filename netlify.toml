@@ -9,6 +9,46 @@
 
 # ── Old kristiangg.dk pages → new structure (301 preserves SEO equity) ────────
 [[redirects]]
+  from = "/hypnose-soevnproblemer"
+  to = "/kurser/sov-bedre"
+  status = 301
+
+[[redirects]]
+  from = "/hypnose-soevnproblemer/"
+  to = "/kurser/sov-bedre"
+  status = 301
+
+[[redirects]]
+  from = "/terapihund"
+  to = "/til-dig/nervesystemet"
+  status = 301
+
+[[redirects]]
+  from = "/terapihund/"
+  to = "/til-dig/nervesystemet"
+  status = 301
+
+[[redirects]]
+  from = "/aandedraetsterapi"
+  to = "/kurser/ro-i-nervesystemet"
+  status = 301
+
+[[redirects]]
+  from = "/aandedraetsterapi/"
+  to = "/kurser/ro-i-nervesystemet"
+  status = 301
+
+[[redirects]]
+  from = "/psykoterapi"
+  to = "/til-dig/psykoterapi"
+  status = 301
+
+[[redirects]]
+  from = "/psykoterapi/"
+  to = "/til-dig/psykoterapi"
+  status = 301
+
+[[redirects]]
   from = "/hypnosen"
   to = "/til-dig/psykoterapi"
   status = 301
