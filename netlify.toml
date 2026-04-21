@@ -30,12 +30,12 @@
 
 [[redirects]]
   from = "/aandedraetsterapi"
-  to = "/kurser/ro-i-nervesystemet"
+  to = "/aandedraet"
   status = 301
 
 [[redirects]]
   from = "/aandedraetsterapi/"
-  to = "/kurser/ro-i-nervesystemet"
+  to = "/aandedraet"
   status = 301
 
 [[redirects]]
@@ -217,6 +217,66 @@
 [[redirects]]
   from = "/faq/"
   to = "/til-dig/psykoterapi"
+  status = 301
+
+[[redirects]]
+  from = "/angst"
+  to = "/nervesystem"
+  status = 301
+
+[[redirects]]
+  from = "/angst/"
+  to = "/nervesystem"
+  status = 301
+
+[[redirects]]
+  from = "/hypnose-fobi"
+  to = "/hypnose"
+  status = 301
+
+[[redirects]]
+  from = "/hypnose-fobi/"
+  to = "/hypnose"
+  status = 301
+
+[[redirects]]
+  from = "/hypnose-stammen"
+  to = "/hypnose"
+  status = 301
+
+[[redirects]]
+  from = "/hypnose-stammen/"
+  to = "/hypnose"
+  status = 301
+
+[[redirects]]
+  from = "/trad-workshop"
+  to = "/workshops"
+  status = 301
+
+[[redirects]]
+  from = "/trad-workshop/"
+  to = "/workshops"
+  status = 301
+
+[[redirects]]
+  from = "/stoette-til-foraeldre-naar-boern-anbringes"
+  to = "/ungestoette"
+  status = 301
+
+[[redirects]]
+  from = "/stoette-til-foraeldre-naar-boern-anbringes/"
+  to = "/ungestoette"
+  status = 301
+
+[[redirects]]
+  from = "/udfordringen-opstaar"
+  to = "/nervesystem"
+  status = 301
+
+[[redirects]]
+  from = "/udfordringen-opstaar/"
+  to = "/nervesystem"
   status = 301
 
 # ── Trailing-slash normalisation (new pages) ─────────────────────────────────
